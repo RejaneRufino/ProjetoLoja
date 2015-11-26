@@ -1,0 +1,28 @@
+package loja;
+
+
+public class Itens {
+	
+	private String nome;
+	private double preco;
+	private int codigoBarras;
+	
+
+	public Itens (int codigoBarras, String nome, double preco){
+		this.codigoBarras = codigoBarras;
+		this.nome = nome;
+		this.preco = preco;
+	}
+	
+
+	public String toString(){
+		return "\nCodigo de Barra: " + this.codigoBarras
+				+  "\nNome: " + this.nome +
+				"\nPreco: " + this.preco;	
+	}
+	
+	public int GetCodigoBarras(){
+		return this.codigoBarras;
+	}
+
+}
